@@ -17,6 +17,7 @@ class CreateDiscountsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->string('action');
+            $tablr->string('location');
             $table->string('minutes');
             $table->boolean('delivery');
             $table->timestamps();

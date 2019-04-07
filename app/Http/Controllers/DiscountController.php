@@ -17,7 +17,7 @@ class DiscountController extends Controller
     }
     public function create(Request $request)
     {
-        \Auth::user()->discounts()->create(["delivery" => $request->delivery, "action" => $request->action, "minutes" => $request->minutes]);
+        \Auth::user()->discounts()->create(["delivery" => $request->delivery, "action" => $request->action, "minutes" => $request->minutes, "location" => $request->location]);
         return [
             "success" => true
         ];
